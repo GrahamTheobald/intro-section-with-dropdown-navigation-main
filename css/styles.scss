@@ -2,6 +2,8 @@
 
 $AlmostWhite: hsl(0, 0%, 98%);
 $MediumGray: hsl(0, 0%, 41%);
+$MediumGray2: hsla(0, 0%, 41%, .9);
+
 $AlmostBlack: hsl(0, 0%, 8%);
 
 *, *::before, *::after {
@@ -15,9 +17,14 @@ body {
     font-size: 16px;
     color: $AlmostBlack;
     background-color: $AlmostWhite;
+    position: relative
 }
 img {
     max-width: 100%;
+}
+
+ul {
+    list-style: none;
 }
 .hidden {
     display: none
@@ -35,6 +42,59 @@ img {
     .menu-button, .close-button {
         margin-left: auto;
         width: 2rem;
+    }
+    &__nav {
+        position: absolute;
+        inset: 0 0 0 0;
+        background-color: $MediumGray2;
+        .menu {
+            display: flex;
+            flex-direction: column;
+            gap: 1.5rem;
+            position: absolute;
+            inset: 0 0 0 40%;
+            padding: 1.5rem 1rem;
+            background-color: $AlmostWhite;
+            color: $MediumGray;
+            .menu-item {
+                display: flex;
+                gap: 1rem;
+                align-items: center;
+            }
+            .menu-revealed {
+                padding: 1.5rem 2rem;
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 1rem;
+                    li {
+                        display: flex;
+                        gap: 1rem;
+                    }
+                }
+            }
+            
+            .close-menu-button {
+                margin-left: auto;
+            }
+            .login {
+                button {
+                    display: block;
+                    width: 100%;
+                    outline: none;
+                    border: none;
+                    padding: .5rem 1rem;
+                    border-radius: 1rem;
+                    font-size: 1rem;
+                    font-weight: bold;
+                    color: inherit;
+                    background-color: inherit;
+                }
+                .register {
+                    border: 2px solid $MediumGray;
+                }
+            }
+        }
     }
 }
 
@@ -73,3 +133,4 @@ main {
         }
     }
 }
+

@@ -10,10 +10,15 @@ body {
   font-size: 16px;
   color: hsl(0deg, 0%, 8%);
   background-color: hsl(0deg, 0%, 98%);
+  position: relative;
 }
 
 img {
   max-width: 100%;
+}
+
+ul {
+  list-style: none;
 }
 
 .hidden {
@@ -32,6 +37,56 @@ img {
 .header .menu-button, .header .close-button {
   margin-left: auto;
   width: 2rem;
+}
+.header__nav {
+  position: absolute;
+  inset: 0 0 0 0;
+  background-color: hsla(0deg, 0%, 41%, 0.9);
+}
+.header__nav .menu {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: absolute;
+  inset: 0 0 0 40%;
+  padding: 1.5rem 1rem;
+  background-color: hsl(0deg, 0%, 98%);
+  color: hsl(0deg, 0%, 41%);
+}
+.header__nav .menu .menu-item {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+.header__nav .menu .menu-revealed {
+  padding: 1.5rem 2rem;
+}
+.header__nav .menu .menu-revealed ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.header__nav .menu .menu-revealed ul li {
+  display: flex;
+  gap: 1rem;
+}
+.header__nav .menu .close-menu-button {
+  margin-left: auto;
+}
+.header__nav .menu .login button {
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  font-weight: bold;
+  color: inherit;
+  background-color: inherit;
+}
+.header__nav .menu .login .register {
+  border: 2px solid hsl(0deg, 0%, 41%);
 }
 
 main .info {

@@ -12,29 +12,38 @@
   <header class="header">
     <img class="logo"src="./images/logo.svg" alt="logo">
     <nav class="header__nav">
-      <ul class="menu hidden">
+      <ul class="menu">
+        <img class="close-menu-button " src="./images/icon-close-menu.svg" alt="close menu">
         <li>
-          Features <img src="./images/icon-arrow-down.svg" alt="down arrow">
-          <div class="menu__features hidden">
-            <ul>
-              <li>
-                <img src="./images/icon-todo.svg" alt="todo"> <p>Todo List</p>
-              </li>
-              <li>
-                <img src="./images/icon-calendar.svg" alt="calender"> <p>Calender</p>
-              </li>
-              <li>
-                <img src="./images/icon-reminders.svg" alt="reminders"> <p>Reminders</p>
-              </li>
-              <li>
-                <img src="./images/icon-planning.svg" alt="planning"> <p>Planning</p>
-              </li>
-            </ul>
+          <div class="menu-item">
+            Features 
+            <img class="down" src="./images/icon-arrow-down.svg" alt="down arrow">
+            <img class="up hidden" src="./images/icon-arrow-up.svg" alt="up arrow">
           </div>
+            <div class="menu-revealed">
+              <ul>
+                <li>
+                  <img src="./images/icon-todo.svg" alt="todo"> <p>Todo List</p>
+                </li>
+                <li>
+                  <img src="./images/icon-calendar.svg" alt="calender"> <p>Calender</p>
+                </li>
+                <li>
+                  <img src="./images/icon-reminders.svg" alt="reminders"> <p>Reminders</p>
+                </li>
+                <li>
+                  <img src="./images/icon-planning.svg" alt="planning"> <p>Planning</p>
+                </li>
+              </ul>
+            </div>
         </li>
         <li>
-          Company <img src="./images/icon-arrow-down.svg" alt="down arrow">
-          <div class="menu__company hidden">
+          <div class="menu-item">
+            Company
+            <img class="down" src="./images/icon-arrow-down.svg" alt="down arrow">
+            <img class="up hidden" src="./images/icon-arrow-up.svg" alt="up arrow">
+          </div>
+          <div class="menu-revealed">
             <ul>
               <li>History</li>
               <li>Our Team</li>
@@ -48,14 +57,13 @@
         <li>
           About
         </li>
+        <div class="login">
+          <button>Login</button>
+          <button class="register">Register</button>
+        </div>
       </ul>
-      <div class="login hidden">
-        <button>Login</button>
-        <button>Register</button>
-      </div>
     </nav>
-    <img class="menu-button" src="./images/icon-menu.svg" alt="menu">
-    <img class="close-menu-button hidden" src="./images/icon-close-menu.svg" alt="close menu">
+    <img class="menu-button hidden" src="./images/icon-menu.svg" alt="menu">
 
   </header>
   <main>
