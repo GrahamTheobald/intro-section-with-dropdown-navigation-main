@@ -3,23 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="css/styles.css">
+  <script src="script.js" src="./script.js" defer></script>
   <title>Frontend Mentor | Intro section with dropdown navigation</title>
 </head>
 <body>
-  <header class="header">
-    <img class="logo"src="./images/logo.svg" alt="logo">
-    <nav class="header__nav">
-      <ul class="menu">
-        <img class="close-menu-button " src="./images/icon-close-menu.svg" alt="close menu">
-        <li>
-          <div class="menu-item">
-            Features 
-            <img class="down" src="./images/icon-arrow-down.svg" alt="down arrow">
-            <img class="up hidden" src="./images/icon-arrow-up.svg" alt="up arrow">
-          </div>
+    <header class="header">
+      <img class="logo"src="./images/logo.svg" alt="logo">
+      <nav class="header__nav">
+        <ul class="menu">
+          <img class="close-menu-button " src="./images/icon-close-menu.svg" alt="close menu">
+          <li>
+            <div class="menu-item">
+              Features 
+              <img class="down" src="./images/icon-arrow-down.svg" alt="down arrow">
+              <img class="up hidden" src="./images/icon-arrow-up.svg" alt="up arrow">
+            </div>
             <div class="menu-revealed">
               <ul>
                 <li>
@@ -36,59 +36,59 @@
                 </li>
               </ul>
             </div>
-        </li>
-        <li>
-          <div class="menu-item">
-            Company
-            <img class="down" src="./images/icon-arrow-down.svg" alt="down arrow">
-            <img class="up hidden" src="./images/icon-arrow-up.svg" alt="up arrow">
+          </li>
+          <li>
+            <div class="menu-item">
+              Company
+              <img class="down" src="./images/icon-arrow-down.svg" alt="down arrow">
+              <img class="up hidden" src="./images/icon-arrow-up.svg" alt="up arrow">
+            </div>
+            <div class="menu-revealed">
+              <ul>
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            Careers
+          </li>
+          <li>
+            About
+          </li>
+          <div class="login">
+            <button>Login</button>
+            <button class="register">Register</button>
           </div>
-          <div class="menu-revealed">
-            <ul>
-              <li>History</li>
-              <li>Our Team</li>
-              <li>Blog</li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          Careers
-        </li>
-        <li>
-          About
-        </li>
-        <div class="login">
-          <button>Login</button>
-          <button class="register">Register</button>
-        </div>
-      </ul>
-    </nav>
-    <img class="menu-button hidden" src="./images/icon-menu.svg" alt="menu">
-
-  </header>
-  <main>
-    <div>
-      <img src="./images/image-hero-mobile.png" alt="hero">
-      <img class="hidden" src="./images/image-hero-desktop.png" alt="hero">
-    </div>
-    <div class="info">
-      <h1>
-        Make remote work
-      </h1>
-      <p>
-        Get your team in sync, no matter your location. Streamline processes, 
-        create team rituals, and watch productivity soar.
-      </p>
-      <button>
-        Learn more
-      </button>
-      <footer>
-        <img src="./images/client-databiz.svg" alt="client-databiz">      
-        <img src="./images/client-audiophile.svg" alt="client-audiophile">      
-        <img src="./images/client-meet.svg" alt="client-meet">      
-        <img src="./images/client-maker.svg" alt="client-maker">      
-      </footer>
-    </div>
+        </ul>
+      </nav>
+      <img class="menu-button" src="./images/icon-menu.svg" alt="menu">
+      
+    </header>
+    <main>
+      <div class="hero">
+        <!-- <img class="hero-mobile" src="./images/image-hero-mobile.png" alt="hero">
+        <img class="hero-desktop" src="./images/image-hero-desktop.png" alt="hero"> -->
+      </div>
+      <div class="info">
+        <h1>
+          Make remote work
+        </h1>
+        <p>
+          Get your team in sync, no matter your location. Streamline processes, 
+          create team rituals, and watch productivity soar.
+        </p>
+        <button>
+          Learn more
+        </button>
+        <footer>
+          <img src="./images/client-databiz.svg" alt="client-databiz">      
+          <img src="./images/client-audiophile.svg" alt="client-audiophile">      
+          <img src="./images/client-meet.svg" alt="client-meet">      
+          <img src="./images/client-maker.svg" alt="client-maker">      
+        </footer>
+      </div>
     </main>
   </body>
   </html>
